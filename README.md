@@ -16,4 +16,7 @@ Generating Data:
 -Run FileMaker.py in Pycharm with faker to generate as many records in a .csv file
 
 Normalizing Data:
--Enter the path to in csvreader prompt in Main.
+-Enter the path to in csvreader prompt in Main.java
+
+Partner:
+Nic Cordova

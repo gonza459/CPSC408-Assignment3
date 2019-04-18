@@ -18,9 +18,13 @@ public class Main {
         List<List<String>> clientArray;
 
         PopulateDB pop = new PopulateDB();
-        clientArray= pop.CSVReader("/Users/Sam_comp/IdeaProjects/cpsc408_demo/src/Clients.csv");
 
-        pop.createDatabase(conn);
+        //Creates an array to store the data from the csv file
+        //Enter the csvfile path for the reader to locate the file
+        clientArray= pop.CSVReader("/Users/Sam_comp/PycharmProjects/Assignment3/Salon.csv");
+
+        pop.InsertToDatabase(conn); //insert data into the database
+        pop.DisplayDatabase(conn); //Prompts for displaying data tables
 
     }
 

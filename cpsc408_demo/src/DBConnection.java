@@ -17,7 +17,7 @@ public class DBConnection {
 
             Class.forName(driverLoc);
             mysqlConnection = DriverManager.getConnection(connectionUrl, uName, pass);
-            System.out.println("Success!");
+            System.out.println("Successful Connection!\n");
 
         }catch(Exception ex){
             ex.printStackTrace();
